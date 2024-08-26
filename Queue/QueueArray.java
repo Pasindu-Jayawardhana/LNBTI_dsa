@@ -1,10 +1,10 @@
-class Queue {
+class QueueArray {
     private int size;
     private int front;
     private int rear;
     private int[] queueArray;
 
-    public Queue(int size) {
+    public QueueArray(int size) {
         this.size = size;
         this.front = -1;
         this.rear = -1;
@@ -74,7 +74,7 @@ class Queue {
     }
 
     public static void main(String[] args) {
-        Queue queue = new Queue(5);
+        QueueArray queue = new QueueArray(5);
 
         queue.enqueue(10);
         queue.enqueue(20);
